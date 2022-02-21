@@ -23,8 +23,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: install SDL2
-      run: brew install cmake
-           brew install sdl2
+      run:  | 
+        brew install cmake
+        brew install sdl2
     #  run:  |
     #        if [ "$RUNNER_OS" == "Linux" ]; then
     #          sudo apt-get install libsdl2-dev
